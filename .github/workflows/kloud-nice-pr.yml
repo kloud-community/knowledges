@@ -1,8 +1,6 @@
 name: "Is it nice PR?"
 on:
   pull_request:
-    types:
-      - opened
     branches:
         - main
 
