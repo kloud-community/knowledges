@@ -2,7 +2,7 @@
 
 lazygit は CLI 上から Git を操作することのできる TUI ソフトです。\
 このソフトを使うと、Git を操作するときにコマンドではなく TUI から操作できます。（一部の複雑な操作は CLI からじゃないとできないけど）
-![Alt Text](lazygit.png)
+![lazygit のホーム画面](lazygit.png)
 
 ## インストール方法
 
@@ -18,6 +18,27 @@ OS や使用しているパッケージマネージャーによっても異な�
 - **Local Branches**のタブで**n**を押すと、新しいブランチを作成できます。**d**ではブランチを消すことができます。
 
 詳しくは[README](https://github.com/jesseduffield/lazygit)を見てみてください。
+
+## Lazygit の便利な機能
+
+### Stash
+
+Files で `Shift+S` を押すといろいろな設定で stash することができます。(ファイル全部 stash したり、stage した/してない変更だけやるとか)
+
+![Shift+S を押した後に出てくる `Stash options`](stash-configuration.png)
+
+### Custom Patch
+
+過去のコミットの変更を一部引っ張ってワーキングツリーに持ってくることができます。
+
+1. `Commits` 等でファイルの diff を Diff セクションに出す
+2. `Enter` で Diff セクションに入って、変更を部分的にステージングするときみたいに Space 等で Custom Patch に変更を入れる
+3. `Files` で `Ctrl+P` を押して適用する
+
+ただ適用するだけではなく、いろいろなことができます:
+
+![Patch Options の画像](patch-options.png)
+
 
 ## まとめ
 
