@@ -1,0 +1,23 @@
+{
+  "name": "api",
+  "module": "index.ts",
+  "type": "module",
+  "packageManager": "bun@1.0.14",
+  "scripts": {
+    "start": "bun run ./src/index.ts",
+    "dev": "bun run ./src/index.ts --hot",
+    "lint": "biome lint ./src --diagnostic-level=info",
+    "tsc": "tsc",
+    "format": "biome format ./src --diagnostic-level=warn"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@biomejs/biome": "^1.4.1",
+    "zod": "^3.22.4"
+  }
+}
