@@ -10,4 +10,8 @@ jobs:
   nicepr:
     runs-on: ubuntu-latest
     steps:
-      - uses: './ts/create-gh-actions/action.yml'
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: nice pr?
+        uses: './ts/create-gh-actions'
