@@ -1,0 +1,5 @@
+name: 'kloud-nice-pr'
+description: '良いprだ…'
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
