@@ -1,0 +1,13 @@
+name: "Is it nice PR?"
+on:
+  pull_request:
+    types:
+      - opened
+    branches:
+        - main
+
+jobs:
+  nicepr:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: './ts/create-gh-actions/action.yml'
