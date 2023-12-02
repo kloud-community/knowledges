@@ -2,7 +2,7 @@
 
 lazygit は CLI 上から Git を操作することのできる TUI ソフトです。\
 このソフトを使うと、Git を操作するときにコマンドではなく TUI から操作できます。（一部の複雑な操作は CLI からじゃないとできないけど）
-![Alt Text](lazygit.png)
+![lazygit のホーム画面](lazygit.png)
 
 ## インストール方法
 
