@@ -37,7 +37,7 @@ Files で `Shift+S` を押すといろいろな設定で stash することが�
 
 ただ適用するだけではなく、いろいろなことができます:
 
-![Patch Options の画像](image.png)
+![Patch Options の画像](patch-options.png)
 
 
 ## まとめ
