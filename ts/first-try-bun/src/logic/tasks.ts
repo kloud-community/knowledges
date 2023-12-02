@@ -5,7 +5,7 @@ import { Task } from "../task";
 const tasks: Record<string, Task> = {};
 
 export function getTask(id?: string | undefined) {
-  if(id === undefined) {
+  if (id === undefined) {
     return Object.values(tasks);
   }
 
@@ -13,8 +13,8 @@ export function getTask(id?: string | undefined) {
 }
 
 export function createTask(task: {
-  name: string,
-  description?: string | undefined,
+  name: string;
+  description?: string | undefined;
 }) {
   const id = randomUUID();
   const createdTask = new Task(id, task.name, task.description);
@@ -24,6 +24,4 @@ export function createTask(task: {
   return createdTask;
 }
 
-export function completeTask(id: string) {
-
-}
+export function completeTask(id: string) {}

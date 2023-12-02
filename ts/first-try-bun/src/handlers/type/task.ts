@@ -6,7 +6,7 @@ export const jsonTask = z.object({
   name: z.string(),
   description: z.string().optional(),
   done: z.boolean(),
-})
+});
 export type JsonTask = z.infer<typeof jsonTask>;
 
 export function taskToJSON(task: Task): JsonTask {
@@ -15,5 +15,5 @@ export function taskToJSON(task: Task): JsonTask {
     done: task.done,
     name: task.name,
     description: task.description,
-  }
+  };
 }
